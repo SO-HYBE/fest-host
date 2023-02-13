@@ -389,6 +389,7 @@ h3 {
   position: absolute;
   top: -25px;
   left: 50%;
+  margin-top: 5px;
 }
 
 .intro-p:after {

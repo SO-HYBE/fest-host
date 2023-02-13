@@ -69,17 +69,14 @@ function App() {
           <video autoPlay loop muted plays-inline="true" id='video' className='opacity-50 self-center w-full relative z-0'> <source src={main} type='video/mp4' /></video>
         </div>
         <div className='intro flex flex-row justify-center mt-[100px] mb-[100px]' id='about-sec'>
-        <div>
-            <img src={intro} data-aos="fade-up" className='opacity-70 border-inherit	border-2	rounded hover:rounded-lg hover:border-4 transition duration-300  ease-out ' alt="event agency" />
-          </div>
-          <div className='flex flex-col justify-around items-center'>
-            <h5 className='text-center text-4xl font-bold mb-[20px]'>Who Are We?</h5>
+          <div className='flex flex-col justify-around items-center '>
+            <h5 data-aos="fade-up" className='text-center text-4xl font-bold mb-[20px] transition duration-100  ease-out '>Who Are We?</h5>
 
-            <h4 className='intro-p'>
+            <h4 data-aos="fade-up" className='intro-p transition duration-150  ease-out'>
               We Have Been Happily Serving Customers For Over 30 Years
             </h4>
 
-            <p className='mx-10 text-xl text-center	'>Welcome to Festival International Event
+            <p data-aos="fade-up" className='mx-10 text-xl text-center transition duration-400  ease-out	'>Welcome to Festival International Event
                 Association, a dynamic and innovative
                 start-up that provides comprehensive event
                 management and ticket booking services.
