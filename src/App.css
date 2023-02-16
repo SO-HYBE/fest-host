@@ -24,7 +24,7 @@ html{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 0.125rem;
     bottom: 0;
     left: 0;
     background-color: rgb(238,54,0);
@@ -51,7 +51,7 @@ html{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 0.125rem;
     bottom: 0;
     left: 0;
     background-color: rgb(37,124,222);
@@ -79,7 +79,7 @@ html{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 0.125rem;
     bottom: 0;
     left: 0;
     background-color: rgb(218,119,30);
@@ -107,7 +107,7 @@ html{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 0.125rem;
     bottom: 0;
     left: 0;
     background-color: rgb(53,136,135);
@@ -121,7 +121,7 @@ html{
   }
 
 ::-webkit-scrollbar{
-    width: 0px;
+    width: 0rem;
 }
 
 h3 {
@@ -137,7 +137,7 @@ h3 {
   span {
     display: inline-block;
     opacity: 0;
-    filter: blur(4px);
+    filter: blur(0.25rem);
   }
   
   span:nth-child(1) {
@@ -213,7 +213,7 @@ h3 {
   line-height: 1.8;
   box-sizing: inherit;
   margin: 0;
-  padding: 0 16px;
+  padding: 0 1rem;
   margin-bottom: 4rem;
   flex: 0 0 50%;
   max-width: 50%;
@@ -273,7 +273,7 @@ h3 {
   padding-bottom: 2rem;
   padding-right: 2rem;
   padding-left: 4.8rem;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 0.063rem solid #e0e0e0;
   position: relative;
 }
 
@@ -313,7 +313,7 @@ h3 {
   padding-bottom: 2rem;
   padding-right: 2rem;
   padding-left: 4.8rem;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 0.063rem solid #e0e0e0;
   position: relative;
 }
 
@@ -344,11 +344,11 @@ h3 {
   line-height: 1.8;
   box-sizing: inherit;
   margin: 0;
-  padding: 0 16px;
+  padding: 0 1rem;
   margin-bottom: 4rem;
   flex: 0 0 100%;
   max-width: 50%;
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 
 .title2{
@@ -377,29 +377,29 @@ h3 {
 .intro-p{
   position: relative;
   font-weight: 200;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .intro-p:before {
   display: block;
   content: "";
-  height: 20px;
-  width: 1px;
+  height: 1.25rem;
+  width: 0.063rem;
   background-color: #ffffff;
   position: absolute;
-  top: -25px;
+  top: -1.563rem;
   left: 50%;
-  margin-top: 5px;
+  margin-top: 0.313rem;
 }
 
 .intro-p:after {
   display: block;
   content: "";
-  height: 20px;
-  width: 1px;
+  height: 1.25rem;
+  width: 0.063rem;
   background-color: #ffffff;
   position: absolute;
-  top: 33px;
+  top: 2.063rem;
   left: 50%;
 }
 
@@ -414,6 +414,93 @@ h3 {
 }
 
 .parat:hover{
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 0.063rem white;
   color: transparent;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .intro-p{
+    font-size: 0.5rem;
+  }
+  .title1{
+    font-size: 6vw;
+  }
+  .title2{
+    font-size: 6vw;
+  }
+  .event-list-date{
+    font-size: 8px;
+  }
+  .event-list-date::before{
+    height:1rem;
+    width: 1rem;
+  }
+  .event-list-location{
+    font-size: 8px;
+  }
+  .event-list-location::before{
+  height:1rem;
+  width: 1rem;
+  }
+  .infot{
+    font-size: 8px;
+  }
+}
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 350px) {
+    .headt{
+      top: 28vw;
+  }
+    .header{
+      font-size: 0.5rem;
+      font-weight: 600;
+    }
+}
+/* Small devices (medium phones) */
+@media only screen and (min-width: 375px){
+  .headt{
+    top: 26vw;
+  }
+  .header{
+    font-size: 0.5rem;
+    font-weight: 600;
+  } 
+}
+/* Medium devices (large phones) */
+@media only screen and (min-width: 425px){
+  .headt{
+    top: 24vw;
+  }
+  .header{
+    font-size: 0.6rem;
+    font-weight: 600;
+  } 
+}
+/*TABLETS UP TO LG LAPTOPS*/
+@media only screen and (min-width: 768px){
+  .headt{
+    top: 20vw;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .headt{
+    top: 17vw;
+  }
+  .header{
+    font-size: 1rem;
+    font-weight: 400;
+  } 
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 2500px) {
+  .headt{
+    top: 15vw;
+  }
+  .header{
+    font-size: 2rem;
+    font-weight: 400;
+  } 
 }

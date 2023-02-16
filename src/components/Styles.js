@@ -1,10 +1,10 @@
 import styled from 'styled-components'; 
 export const Button = styled.div`
    position: fixed; 
-   width: 100%;
-   left: 92%;
-   bottom: 100px;
-   height: 20px;
+   width: 100vw;
+   left: 90%;
+   bottom: 10vh;
+   height: 3vh;
    font-size: 3rem;
    z-index: 10;
    cursor: pointer;

@@ -38,7 +38,7 @@ function App() {
   
   return (
       <div className='App scroll-smooth'>
-        
+
         <ScrollButton />
 
         <div className='header relative w-full fixed z-[3]'>
@@ -52,31 +52,38 @@ function App() {
               <li className='basis-1/4 align-bottom text-center self-center	'><a onClick={handleContactScroll} id='contact' className='cursor-pointer text-slate-400 hover:text-white hover:font-bold  rounded-r-lg hover:tracking-widest' >Contact Us</a></li>
             </ul>
         </div>
-        <div className='bg-clip-padding w-full whitespace-pre' >
-          <h3 className='absolute left-0 top-0 z-[1]'>
-          <span className='font-semibold text-5xl text-white inline-block self-center w-50 mt-44 ml-[350px] '>WELCOME TO THE</span>
+          <h3 className='headt absolute left-0 top-[20vw] z-[1] w-full h-[20rem] whitespace-pre'>
+          <div className='flex flex-row ml-[15vw]'>
+          <span className='font-semibold text-[2vw] text-white inline-block self-center w-50'>WELCOME </span>
+          <span className='font-semibold text-[2vw] text-white inline-block self-center w-50'>TO </span>
+          <span className='font-semibold text-[2vw] text-white inline-block self-center w-50'>THE</span>
+          </div>
           <br />
-          <span className='font-bold text-[180px] text-white inline-block self-center w-50 mt-30 ml-[400px] '>"EXTRA</span>
+          <div className='flex flex-col justify-center'>
+          <span className='font-bold text-[10vw] text-white inline-block ml-[25vw]'>"EXTRA</span>
+          <span className='font-bold text-[10vw] text-white inline-block text-center'>ORDINARY"</span>
           <br />
-          <span className='font-bold text-[180px] text-white inline-block self-center w-50 mt-30 ml-[400px] '> ORDINARY"</span>
-          <br />
-          <span className='font-bold text-6xl text-mid-gray inline-block self-center w-50 mt-[50px] ml-[300px] whitespace-pre'>AN </span>
-          <span className='font-bold text-6xl text-mid-gray inline-block self-center w-50 mt-[50px] whitespace-pre'>EXCEPTIONAL </span>
-          <span className='font-bold text-6xl text-mid-gray inline-block self-center w-50 mt-[50px] whitespace-pre'>EVENT </span>
-          <span className='font-bold text-6xl text-mid-gray inline-block self-center w-50 mt-[50px] whitespace-pre'>MANAGMENT </span>
-          <span className='font-bold text-6xl text-mid-gray inline-block self-center w-50 mt-[50px] whitespace-pre'>AGENCY  </span>          
+          </div>
+          <div className='flex flex-row justify-center text-center'>
+          <span className='font-bold text-[3vw] text-mid-gray inline-block whitespace-pre'>AN </span>
+          <span className='font-bold text-[3vw] text-mid-gray inline-block whitespace-pre'>EXCEPTIONAL </span>
+          <span className='font-bold text-[3vw] text-mid-gray inline-block whitespace-pre'>EVENT </span>
+          <span className='font-bold text-[3vw] text-mid-gray inline-block whitespace-pre'>MANAGMENT </span>
+          <span className='font-bold text-[3vw] text-mid-gray inline-block whitespace-pre'>AGENCY</span>          
+          </div>
           </h3>
+        <div className='bg-clip-padding w-full whitespace-pre' >
           <video autoPlay loop muted plays-inline="true" id='video' className='opacity-50 self-center w-full relative z-0'> <source src={main} type='video/mp4' /></video>
         </div>
-        <div className='intro flex flex-row justify-center mt-[100px] mb-[100px]' id='about-sec'>
-          <div className='flex flex-col justify-around items-center '>
-            <h5 data-aos="fade-up" className='text-center text-4xl font-bold mb-[20px] transition duration-100  ease-out '>Who Are We?</h5>
+        <div className='intro flex flex-row justify-center mt-[6.25rem] mb-[6.25rem]' id='about-sec'>
+          <div className='flex flex-col justify-around items-center w-[60vw]'>
+            <h5 data-aos="fade-up" className='text-center text-4xl font-bold mb-[1.25rem] transition duration-100  ease-out'>Who Are We?</h5>
 
             <h4 data-aos="fade-up" className='intro-p transition duration-150  ease-out'>
               We Have Been Happily Serving Customers For Over 30 Years
             </h4>
 
-            <p data-aos="fade-up" className='mx-10 text-xl text-center transition duration-400  ease-out	'>Welcome to Festival International Event
+            <p data-aos="fade-up" className='infot mx-10 text-xl text-center transition duration-400  ease-out w-50'>Welcome to Festival International Event
                 Association, a dynamic and innovative
                 start-up that provides comprehensive event
                 management and ticket booking services.
@@ -89,13 +96,13 @@ function App() {
         <div 
         className='image-bg dark-overlay flex flex-row justify-center items-center'
         style={{backgroundImage: `url(${eventt})`}}        
-        >   <h2 className='parat text-[180px]'>AWESOME</h2>
+        >   <h2 className='parat text-[13vw]'>AWESOME</h2>
         </div>                  
-        <div className='column px-8 pt-[100px] pb-[10px]' id='event-sec'>
+        <div className='column px-8 pt-[6.25rem] pb-[0.625rem]' id='event-sec'>
             <h2 className='events-header'>UPCOMING EVENTS.</h2>
         </div>
         <section className='events flex mb-[5vw]'>
-          <div className='basis-1/2 pl-[2.5vw] pr-[2.4vw] mb-[40px] event1'>
+          <div className='basis-1/2 pl-[2.5vw] pr-[2.4vw] mb-[2.5rem] event1'>
               <h3 className='title1'>CDL MAJOR III TOURNAMENT</h3>
               <p className='event-desc'>Experience the Major III Tournament live in person at the Esports Stadium Arlington in Arlington TX. All 12 League teams will compete across four days of insane action to be crowned Major III Champion.</p>
               <ul className='event-list'>
@@ -103,7 +110,7 @@ function App() {
                 <li className='event-list-location'>ESPORTS STADIUM ARLINGTON, ARLINGTON TX</li>
               </ul>
           </div>
-          <div className='basis-1/2 pl-[2.5vw] pr-[2.4vw] mb-[40px] event2'>
+          <div className='basis-1/2 pl-[2.5vw] pr-[2.4vw] mb-[2.5rem] event2'>
               <h3 className='title2'>LONGINES GLOBAL CHAMPIONS TOUR - DOHA</h3>
               <p className='event-desc'>Al Shaqab is the stunning world-renowned venue that plays host to the electrifying launchpad to the 2023 LGCT and GCL season in the modern city of Doha, Qatar.</p>
               <ul className='event-list '>
@@ -115,9 +122,9 @@ function App() {
         <div 
         className='image-bg dark-overlay flex flex-row justify-center items-center'
         style={{backgroundImage: `url(${event2})`}}        
-        >   <h2 className='parat text-[180px]'>EVENTS</h2>
+        >   <h2 className='parat text-[13vw]'>EVENTS</h2>
         </div>
-        <footer className='w-full flex items-center justify-center bg-black mt-[60px]' id='contact-sec'>
+        <footer className='w-full flex items-center justify-center bg-black mt-[3.75rem]' id='contact-sec'>
         <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
             <div className="w-full text-7xl font-bold">
                 <h1 className="w-full md:w-2/3">How can we help you. get
@@ -131,7 +138,7 @@ function App() {
             </div>
             <div className="flex flex-col">
                 <div className="flex mt-24 mb-12 flex-row justify-between items-center">
-                    <a href='#' className='w-[100px] h-[100px]'><img src={foot} alt="event managment agency"/></a>
+                    <a href='#' className='w-[6.25rem] h-[6.25rem]'><img src={foot} alt="event managment agency"/></a>
                     <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase align-bottom">About</a>
                     <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase align-bottom">Services</a>
                     <a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase align-bottom">Why us</a>
