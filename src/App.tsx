@@ -131,7 +131,7 @@ function App() {
                     in touch</h1>
             </div>
             <div className="flex mt-8 flex-col md:flex-row md:justify-between" >
-                <p className="w-full md:w-2/3 text-gray-400">We would love the chance to speak with you about your event requirements. Tell us what is on your mind and we will make sure that someone from Better Event reaches out to answer your question.</p>
+                <p className="w-full md:w-2/3 text-gray-400">We would love the chance to speak with you about your event requirements. Tell us what is on your mind and we will make sure that someone from FEST reaches out to answer your question.</p>
                 <div className="w-44 pt-6 md:pt-0">
                     <a href='#' className="bg-red-500 justify-center text-center rounded-lg shadow px-10 py-3 flex items-center hover:text-black hover:bg-white transition duration-300 ease-in-out">Contact US</a>
                 </div>
